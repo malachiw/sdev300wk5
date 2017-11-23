@@ -1,0 +1,41 @@
+<?php
+  if(!$_COOKIE['appusername'])
+    header('Location: loginAuth.html');
+
+<!DOCTYPE html>
+<!--sonics.html-->
+<!--Nov 19, 2017 -->
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Sonic Screwdrivers!</title>
+  <link rel="stylesheet" href="sonic.css">
+  <link href="https://fonts.google.com/css?family=Dosis:200, 400, 500, 700" rel="stylesheet">
+ </head>
+<body>
+  <div>
+    <img class="banner" src="images/layout/doctor-who-banner.jpg">
+  </div>
+  <div>
+    <p>
+      <h2>Welcome Whovians to The <span>Sonic Screwdriver </span> Order Page!</h2>
+    </p>
+  </div>
+  <div>
+    <table>
+      <form name="main" method="order" action="orderProcess.php"> 
+     <tr><td>Mark I</td><td>$29.95</td><td>Mark II</td><td>$29.95</td></tr>
+     <tr><td><img src="images/inventory/sonic_screwdrivers/Mark_I.jpg"></td><td>Enter Quantity<br><input name="Mark_I" type="text" size="1"></td><td><img src="images/inventory/sonic_screwdrivers/Mark_II.jpg"></td><td>Enter Quantity<br><input name="Mark_II" type="text" size="1"></td></tr>
+     <tr><td>Mark III</td><td>$29.95</td><td>Mark IV</td><td>$29.95</td></tr>
+     <tr><td><img src="images/inventory/sonic_screwdrivers/Mark_III.jpg"></td><td>Enter Quantity<br><input name="Mark_III" type="text" size="1"></td><td><img src="images/inventory/sonic_screwdrivers/Mark_IV.jpg"></td><td>Enter Quantity<br><input name="Mark_VI" type="text" size="1"></td></tr>
+     <tr><td>Mark V</td><td>$29.95</td><td>Mark VI</td><td>$29.95</td></tr>
+     <tr><td><img src="images/inventory/sonic_screwdrivers/Mark_V.jpg"></td><td>Enter Quantity<br><input name="Mark_V" type="text" size="1"></td><td><img src="images/inventory/sonic_screwdrivers/Mark_VI.jpg"></td><td>Enter Quantity<br><input name="Mark_VI" type="text" size="1"></td></tr>
+     <tr><td>Mark VII</td><td>$29.95</td><td>Mark VIII</td><td>$29.95</td></tr>
+     <tr><td><img src="images/inventory/sonic_screwdrivers/Mark_VII.jpg"></td><td>Enter Quantity<br><input name="Mark_VII" type="text" size="1"></td><td><img src="images/inventory/sonic_screwdrivers/Mark_VIII.jpg"></td><td>Enter Quantity<br><input name="Mark_VIII" type="text" size="1"></td></tr> 
+     <tr><td>River Song</td><td>$29.95</td><td>The Master</td><td>$29.95</td></tr>
+     <tr><td><img src="images/inventory/sonic_screwdrivers/River.jpg"></td><td>Enter Quantity<br><input name="River" type="text" size="1"></td><td><img src="images/inventory/sonic_screwdrivers/Master.jpg"></td><td>Enter Quantity<br><input name="Master" type="text" size="1"></td></tr>
+     <tr><td colspan="5" border="0px"><input name="btnsubmit" type="submit" value="Submit Order"></td></tr>
+    </table>
+  </div>
+</body>
+</html>

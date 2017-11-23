@@ -1,0 +1,22 @@
+.banner {
+	display: block;
+	margin: 0 auto;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Dosis', sans-serif;
+}
+span {
+	font-weight: 700;
+	font-size: xx-large;
+}
+table, th, td {
+	border: 1px solid black;
+}
+td {
+	padding: 10px;
+	text-align: center;
+}
+	
