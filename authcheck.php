@@ -5,11 +5,22 @@
 </head>
 <body> 
 
-<?php
 
-	// Retrieve Post Data
-	$username = $_POST["username"];
-	$email = $_POST["emailadd"];
+
+	
+<?php
+// Retrieve Post Data
+  $username = test_input($_POST["username"]);
+  $email = test_input($_POST["emailadd"]);
+ 
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
 	
  
 		 // Set the session information
